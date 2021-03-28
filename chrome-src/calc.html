@@ -1,0 +1,99 @@
+<!--
+/*
+ * Copyright (c) 2009, 2010, 2011, 2012 Brent Weston Robinett <bwrobinett@gmail.com>
+ * Licensed under the MIT License: http://www.opensource.org/licenses/mit-license.php
+ */
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cloudy Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/calc.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/units.js"></script>
+	<script src="js/init_calc.js"></script>
+	<script src="js/custom.js"></script>
+	<style>
+		#calcWrapper {
+			width:100% !important;
+			height:100% !important;
+		}
+	</style>
+</head>
+<body id="calc">
+<div id="calcWrapper" class="vbox">
+	<table id="calcWrapperTable">
+		<!--
+            Header
+        -->
+		<tr>
+			<td>
+				<div id="headerWrapper" class="boxFlex0">
+					<div id="headerLinks">
+						<a href="http://code.google.com/p/chromey-calculator/wiki/Help" target="_tab" id="googleCalcHelp" class="headerLink">Help</a>
+						<span class="headerSeparator">|</span>
+						<!--								<a href="options.html" target="_tab" id="options" class="headerLink">Options</a>-->
+						<!--								<span class="headerSeparator">|</span>-->
+						<a href="#calcResults" id="clearAll" class="headerLink">Clear</a>
+					</div>
+					<a href="https://chrome.google.com/webstore/detail/acgimceffoceigocablmjdpebeodphgc" target="_tab" id="chromeyCalcPageLink">
+						<pre id="chromeyCalcName">Cloudy Calculator</pre>
+					</a>
+				</div>
+			</td>
+		</tr>
+		<!--
+            Results
+        -->
+		<tr>
+			<td id="calcResultsWrapperCell">
+				<div id="calcResultsWrapper" class="boxFlex1">
+					<ul id="calcResults"></ul>
+				</div>
+			</td>
+		</tr>
+		<!--
+            Input
+        -->
+		<tr>
+			<td>
+				<div id="calcInputWrapper" class="boxFlex0">
+					<table width="98%">
+						<tr>
+							<td style="width: 95%">
+								<input type="text" id="calcInput" tabindex="1" placeholder="> input text"/></td>
+							<td style="width: 5%">
+								<div class="popUpDiv">
+									<button id="popUpButton" class="w3-button w3-teal" >Equation</button>
+									<div class="dropdown-content">
+										<table>
+											<tr>
+												<td id="cos">cos</td>
+												<td id="sin">sin</td>
+												<td id="tan">tan</td>
+											</tr>
+											<tr>
+												<td id="pi">&pi;</td>
+												<td id="sqrt">&radic;</td>
+												<td id="square">n&sup2;</td>
+											</tr>
+											<tr>
+												<td id="deg">n°</td>
+												<td id="rad"><i>rad</i></td>
+												<td id="fac"><i>n!</i></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+</body>
+<script src="js/custom.js"></script>
+</html>

@@ -1,0 +1,133 @@
+/*
+ * Copyright (c) 2009, 2010, 2011, 2012 Brent Weston Robinett <bwrobinett@gmail.com>
+ * Licensed under the MIT License:http://www.opensource.org/licenses/mit-license.php
+ */
+body, html, #calcWrapperTable {padding:0; margin:0; background-color: #eaedef; height:100%; width:100%;}
+body {font-size:17px; font-family:monospace; color:#123272; overflow:hidden;}
+ul {list-style-type:none; margin-left:-15px;}
+#calcWrapper {position:absolute; table-layout:fixed; height:100%; width:100%; margin:0; padding:0px;}
+/*
+	Header
+*/
+#headerWrapper {margin-left:7px; margin-right: 3px}
+#chromeyCalcName {
+	position:absolute; margin-top: 5px;
+	font-family: "Noto Sans", sans-serif; font-size:20px; font-weight:bold; color:#3c5481;
+	letter-spacing:2px;
+	cursor:pointer;
+}
+#chromeyCalcPageLink {text-decoration:none;}
+#headerLinks {
+	position:relative; float:right; height:38px; margin-right:2px; margin-top: 10px;
+	font-size:18px; font-family: times, serif; color: #13134c;
+	border-bottom-style: none;
+}
+#googleCalcHelp {
+	margin-left: 15px; margin-right: 5px;
+}
+.headerLink, .headerSeparator {position:relative; float:right;}
+.headerSeparator {margin:0 3px;}
+.headerLink {color: #13134c;}
+.headerLink:visited {color: #13134c;}
+#popOut {text-decoration:none; margin-left:-1px; margin-top:-2px;}
+/*
+	Results
+*/
+#calcResultsWrapper {
+	position:relative; margin-left: 8px; margin-right: 8px; margin-top: -20px;
+	font-family:times, serif;
+	background-color:rgba(221,234,249,.5); border:solid #3E5785 1px;
+	-webkit-box-shadow: 0px 0px 3px black; -webkit-border-radius: 0px;
+	overflow:auto;
+}
+#calcResultsWrapper, #calcResultsWrapperCell {
+	height: 300px;
+}
+.outputText, .inputText, .replacedInputText, .errorInputText, .errorOutputText,
+.inputTextWithVars, .replacedVarAssignmentInputText,
+.varAssignmentInputText, .varAssignmentOutputText {
+	cursor:pointer;
+}
+.outputText {position:relative;}
+.resultLink {display: block; position: absolute; top:-3px; left:-21px; width:17px;
+	color:#3E5785; opacity:0.6;
+	font-family:Georgia,serif; font-size:16px;
+	text-align: center; text-decoration:none;
+}
+.resultLink:hover {color:#1D1ECE; opacity:1; text-decoration:underline;}
+.result {position:relative; font-size:16px; margin-left:-25px; border-left:solid 25px transparent;}
+.input {color:grey;}
+.output {margin-bottom:5px;}
+.errorOutputText {font-style:normal;}
+.replacedInputText, .replacedVarAssignmentInputText {text-decoration:line-through;}
+/*
+	Input
+*/
+#calcInput {
+	width:100%; margin:0px; padding-left:22px;
+	border:solid #3E5785 1px; background-color:#DDEAF9;
+	font-family: "Noto Mono"; font-size: 15px; line-height: 24px;
+	-webkit-box-sizing:border-box; -webkit-box-shadow: 0px 0px 3px black;
+}
+#popUpButton {
+	width:100%; line-height: 10px; font-size: 13px; text-align: left;
+	-webkit-box-sizing:border-box; -webkit-box-shadow: 0px 0px 3px black;
+}
+#poppopUpButton {
+	width:100%; line-height: 15px; font-size: 13px; text-align: left; text-align: center;
+	-webkit-box-sizing:border-box; -webkit-box-shadow: 0px 0px 3px black;
+}
+
+#calcalInput {
+	position:relative; width:90%; margin:0px; padding-left:22px;
+	border:solid #3E5785 1px; background-color:#DDEAF9;
+	font-family: "Noto Mono"; font-size: 15px; line-height: 24px;
+	-webkit-box-sizing:border-box; -webkit-box-shadow: 0px 0px 3px black;
+}
+#calcInputWrapper {position:relative; margin:4px 8px 6px; width: 100%}
+#calcInputInnerWrapper {	position:relative;}
+#inputMarker {
+	position:absolute;	left:8px; bottom:1px;
+	font-weight:bold; font-size:16px; font-family:courier, monospace; color:#3E5785;
+}
+.dropdown-content {
+	align-content: center;
+	display: none;
+	top: 73%;
+	right: 2%;
+	position: fixed;
+	float: top;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.popUpDiv:hover .dropdown-content {
+	display: block;
+}
+/*
+	hbox and vbox classes [modified from http://alex.dojotoolkit.org/2009/08/css-3-progress/]
+
+.hbox {display:-webkit-box;	-webkit-box-orient:horizontal; -webkit-box-align:stretch;}
+.hbox > * {-webkit-box-flex:0; display:block;}
+.vbox {display:-webkit-box; -webkit-box-orient:vertical; -webkit-box-align:stretch;}
+.vbox > * {-webkit-box-flex:0; display:block;}
+.spacer {-webkit-box-flex:1;}
+.reverse {-webkit-box-direction:reverse;}
+.boxFlex0 {-webkit-box-flex:0;}
+.boxFlex1, .boxFlex {-webkit-box-flex:1;}
+.boxFlex2 {-webkit-box-flex:2;}
+.boxGroup1 {-webkit-box-flex-group:1;}
+.boxGroup2 {-webkit-box-flex-group:2;}
+.start {-webkit-box-pack:start;}
+.end {-webkit-box-pack:end;}
+.center {-webkit-box-pack:center;}*/
